@@ -79,7 +79,7 @@ export default function App() {
       <View style={styles.searchContainer}>
         <TextInput
           style={styles.input}
-          placeholder="Pág"
+          placeholder="Página"
           keyboardType="numeric"
           value={targetPage}
           onChangeText={(text) => setTargetPage(text.replace(/[^0-9]/g, ''))}
