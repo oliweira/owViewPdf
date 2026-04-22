@@ -64,7 +64,7 @@ export default function App() {
         source={{ uri: pdfUri }}
         horizontal={true}
         enablePaging={true}
-        fitPolicy={1}
+        fitPolicy={0}
         style={styles.pdf}
         onError={(error) => {
           console.log(error);
@@ -82,7 +82,7 @@ export default function App() {
           onSubmitEditing={handleGoToPage}
         />
         <TouchableOpacity style={styles.button} onPress={handleGoToPage}>
-          <Text style={styles.buttonText}>Ir</Text>
+          <Text style={styles.buttonText}>Pesquisar</Text>
         </TouchableOpacity>
         
         <TouchableOpacity 
@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
   },
   searchContainer: {
     position: 'absolute',
-    top: 20,
+    top: 30,
     right: 20,
     flexDirection: 'row',
     backgroundColor: 'rgba(255, 255, 255, 0.95)',
@@ -137,8 +137,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 5
   },
-  input: { width: 45, height: 40, textAlign: 'center', fontSize: 16 },
+  input: {
+    width: 100,
+    height: 40,
+    textAlign: 'center',
+    fontSize: 16,
+    backgroundColor: '#eeeeee', // Fundo cinza claro
+    borderRadius: 5,            // Arredonda levemente os cantos do input
+    color: '#000',              // Garante que o texto digitado seja preto
+  },
   button: { backgroundColor: '#2196F3', paddingHorizontal: 12, paddingVertical: 8, borderRadius: 6 },
   homeButton: { backgroundColor: '#4CAF50', padding: 8, borderRadius: 6 },
-  buttonText: { color: '#fff', fontWeight: 'bold' },
+  buttonText: { color: '#fff', fontWeight: 'bold', fontSize: 16, padding: 2 },
 });
