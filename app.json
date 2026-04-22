@@ -27,7 +27,7 @@
     },
     "plugins": [
       "expo-asset",
-      "expo-document-picker" // Adicione aqui já que instalamos
+      "expo-document-picker"
     ]
   }
 }
