@@ -124,13 +124,15 @@ const styles = StyleSheet.create({
   searchContainer: {
     position: 'absolute',
     top: 40,
-    right: 20,
+    left: 30,
+    right: 30,
     flexDirection: 'row',
     backgroundColor: 'rgba(255, 255, 255, 0.95)',
     borderRadius: 8,
     padding: 5,
     elevation: 10,
     alignItems: 'center',
+    justifyContent: 'center',
     gap: 5
   },
   bottomInfo: {
@@ -144,7 +146,7 @@ const styles = StyleSheet.create({
   },
   pageText: { color: '#fff', fontSize: 16, fontWeight: 'bold' },
   input: {
-    width: 100,
+    width: 115,
     height: 40,
     textAlign: 'center',
     fontSize: 16,
